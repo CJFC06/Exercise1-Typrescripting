@@ -1,0 +1,170 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<script> var exports = { "__esModule": { value: true } } </script>
+<script src="./index.js"></script>
+<style>
+  body {
+    display: contents;
+  }
+
+  #N1 {
+    padding: 50px;
+    margin: auto;
+    margin-top: 10;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: lightgray;
+
+  }
+
+  #N2 {
+    padding: 50px;
+    margin-top: 10;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: beige;
+
+  }
+
+  #N3 {
+    padding: 50px;
+    margin-top: 10;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+
+  }
+
+  #N4 {
+    padding: 50px;
+    margin-top: 10;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: cornflowerblue
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+
+  input {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  header {
+    margin: auto;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+  }
+</style>
+
+
+<div id="N1">
+  <div class="banner">
+    <h2>No.1</h2>
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" id="City" placeholder="City">
+  </div>
+  <div class="mb-3">
+    <input class="form-control" id="Country" placeholder="Country">
+
+  </div>
+  <div class="mb-3">
+    <input class="form-control" id="Population" placeholder="Population">
+
+  </div>
+  <br>
+  <br>
+  <button class="btn btn-success"
+    onclick="addDetails(document.getElementById('City').value,document.getElementById('Country').value,document.getElementById('Population').value)">ADD
+  </button>
+
+  <div class="mb-3">
+    <input type="email" class="form-control" id="search" placeholder="Search"
+      onkeyup="displayNamesOnKeyUp(document.getElementById('search').value)">
+
+  </div>
+
+
+  <br>
+  <br>
+  <div id="myList">
+  </div>
+</div>
+
+<div id="N2">
+  <div class="banner">
+    <h2>No.2</h2>
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" id="digits" maxlength="10" placeholder="Input 10 digits">
+  </div>
+  <br>
+  <br>
+  <button class="btn btn-primary" onclick="tenValidation(document.getElementById('digits').value)">COMPUTE
+  </button>
+
+  <div>
+
+
+  </div>
+
+
+  <br>
+  <br>
+  <div id="myList2">
+  </div>
+</div>
+
+<div id="N3">
+  <div class="banner">
+    <h2>No.3</h2>
+  </div>
+
+  <div class="mb-3">
+    <input class="form-control" id="charac" placeholder="Input">
+  </div>
+  <br>
+  <br>
+  <button class="btn btn-danger" onclick="changeItUp(document.getElementById('charac').value)">Change it up!
+  </button>
+
+  <div>
+
+
+  </div>
+
+
+  <br>
+  <br>
+  <div id="myList3">
+  </div>
+</div>
+<div id="N4">
+  <div class="banner">
+    <h2>No.4</h2>
+  </div>
+
+  <div class="banner">
+    At the console <br>
+    Input: 
+    [false, 1, 0, 1, 2, 0, 1, 3, “a”] 
+  </div>
+  <br> 
+</div>
